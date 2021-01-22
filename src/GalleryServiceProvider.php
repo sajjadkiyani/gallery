@@ -20,7 +20,8 @@ class GalleryServiceProvider extends ServiceProvider
         ], 'public');
         $this->loadViewsFrom(__DIR__.'/Views' , 'gallery');
         $this->publishes([
-            __DIR__.'/Migrations' => database_path('/migrations')
+            __DIR__.'/Migrations' => database_path('/migrations') ,
+            __DIR__.'/Views' => resource_path('/views')
         ]);
     }
 }
