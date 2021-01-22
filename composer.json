@@ -1,0 +1,17 @@
+{
+    "name": "kiyani/gallery",
+    "description": "Gallery image for you site",
+    "authors": [
+        {
+            "name": "sajjad kiyani",
+            "email": "kiyani.programmer@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Kiyani\\Gallery" : "src/"
+        }
+    },
+    "require": {
+    }
+}
