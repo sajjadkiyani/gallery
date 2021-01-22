@@ -1,6 +1,7 @@
 {
     "name": "kiyani/gallery",
     "description": "Gallery image for you site",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "sajjad kiyani",
