@@ -14,14 +14,18 @@ class GalleryServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        require_once __DIR__.'/Http/routes.php' ;
-        $this->publishes([
-            __DIR__.'/Public' => public_path('/'),
-        ], 'public');
+         require_once __DIR__.'/Http/routes.php' ;
+        $this->mergeConfigFrom(__DIR__.'Config/app.php' , 'gallery');
         $this->loadViewsFrom(__DIR__.'/Views' , 'gallery');
         $this->publishes([
             __DIR__.'/Migrations' => database_path('/migrations') ,
             __DIR__.'/Views' => resource_path('/views')
         ]);
+        $this->publishes([
+            __DIR__.'/Public' => public_path('/'),
+        ], 'public');
+        $this->publishes([
+            __DIR__.'Config/app.php' => config_path('gallery.php')
+        ], 'config');
     }
 }
