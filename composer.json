@@ -13,6 +13,8 @@
             "Kiyani\\Gallery\\" : "src/"
         }
     },
-    "require": {},
+    "require": {
+            "Illuminate/Support" : "~5.*"
+    },
     "minimum-stability": "dev"
 }
