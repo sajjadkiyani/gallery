@@ -11,5 +11,7 @@
         "psr-4": {
             "Kiyani\\Gallery\\" : "src/"
         }
-    }
+    },
+    "require": {},
+    "minimum-stability": "dev"
 }
