@@ -15,7 +15,7 @@ class GalleryServiceProvider extends ServiceProvider
     public function boot()
     {
          require_once __DIR__.'/Http/routes.php' ;
-        $this->mergeConfigFrom(__DIR__.'Config/app.php' , 'gallery');
+//         $this->mergeConfigFrom(__DIR__.'Config/app.php' , 'gallery');
         $this->loadViewsFrom(__DIR__.'/Views' , 'gallery');
         $this->publishes([
             __DIR__.'/Migrations' => database_path('/migrations') ,
