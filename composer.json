@@ -11,8 +11,5 @@
         "psr-4": {
             "Kiyani\\Gallery\\" : "src/"
         }
-    },
-    "require": {
-        "Illuminate/Support" : "~5"
     }
 }
