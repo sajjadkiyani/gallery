@@ -15,15 +15,18 @@
     },
     "require": {
         "php": "^7.3|^8.0",
-        "uxweb/sweet-alert" : "2.0.5"
+        "uxweb/sweet-alert" : "2.0.5",
+        "realrashid/sweet-alert": "^3.2"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Kiyani\\Gallery\\GalleryServiceProvider"
+                "Kiyani\\Gallery\\GalleryServiceProvider",
+                "RealRashid\\SweetAlert\\SweetAlertServiceProvider"
             ],
             "aliases": {
-                "gallery": "Kiyani\\Gallery\\Gallery"
+                "Gallery": "Kiyani\\Gallery\\Gallery",
+                "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert::class"
             }
         }
     }
