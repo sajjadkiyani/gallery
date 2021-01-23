@@ -14,7 +14,7 @@
         }
     },
     "require": {
-               "realrashid/sweet-alert": "^3.2"
+        "realrashid/sweet-alert": "^3.2"
     },
     "extra": {
         "laravel": {
@@ -24,7 +24,7 @@
             ],
             "aliases": {
                 "Gallery": "Kiyani\\Gallery\\Gallery",
-                "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert::class"
+                "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert"
             }
         }
     }
