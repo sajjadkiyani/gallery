@@ -18,8 +18,10 @@ class CreateGalleriesTable extends Migration
             $table->bigInteger('user_id')->default(0);
             $table->string('title');
             $table->text('description');
+            $table->bigInteger('title_image')->nullable();
             $table->boolean('status')->default(0);
             $table->boolean('is_private')->default(0);
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

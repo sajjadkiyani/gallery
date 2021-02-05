@@ -17,7 +17,8 @@ class CreateImagesGalleryTable extends Migration
             $table->id();
             $table->bigInteger('gallery_id');
             $table->string('title')->nullable();
-            $table->string('url');
+            $table->string('thumbnail');
+            $table->string('image');
             $table->boolean('is_private')->default(0);
             $table->timestamps();
         });
