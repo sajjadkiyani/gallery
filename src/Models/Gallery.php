@@ -9,13 +9,19 @@ class Gallery extends Model
     protected $fillable = [
       'title' ,
       'description' ,
+      'title_image' ,
       'is_private' ,
+      'published_at' ,
     ];
     public function images()
     {
         return $this->hasMany(ImagesGallery::class)->orderBy('created_at','desc');
     }
 
+    public function image()
+    {
+        return $this->images()->whereId($this->id)->first();
+    }
     public function is_private()
     {
         return $this->is_private ? Lang::get('private') : Lang::get('public');

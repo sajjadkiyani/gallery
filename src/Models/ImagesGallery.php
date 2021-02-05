@@ -9,7 +9,8 @@ class ImagesGallery extends Model
     protected $table = 'images_gallery';
     protected $fillable = [
         'title',
-        'url',
+        'image',
+        'thumbnail',
         'gallery_id' ,
         'updated_at' ,
         'created_at' ,
