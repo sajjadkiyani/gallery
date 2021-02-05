@@ -9,22 +9,28 @@
         }
     ],
     "autoload" : {
+        "files": [
+            "Http/Helpers/autoloadHelpers.php"
+        ],
         "psr-4": {
             "Kiyani\\Gallery\\" : "src/"
         }
     },
     "require": {
-        "realrashid/sweet-alert": "^3.2"
+        "realrashid/sweet-alert": "^3.2",
+        "yajra/laravel-datatables-oracle": "^9.15"
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Kiyani\\Gallery\\GalleryServiceProvider",
-                "RealRashid\\SweetAlert\\SweetAlertServiceProvider"
+                "RealRashid\\SweetAlert\\SweetAlertServiceProvider",
+		"Yajra\\DataTables\\DataTablesServiceProvider,
             ],
             "aliases": {
                 "Gallery": "Kiyani\\Gallery\\Gallery",
-                "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert"
+                "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert" ,
+		"DataTables" : "Yajra\\DataTables\\Facades\\DataTables",
             }
         }
     }
