@@ -25,12 +25,12 @@
             "providers": [
                 "Kiyani\\Gallery\\GalleryServiceProvider",
                 "RealRashid\\SweetAlert\\SweetAlertServiceProvider",
-		"Yajra\\DataTables\\DataTablesServiceProvider,
+		"Yajra\\DataTables\\DataTablesServiceProvider
             ],
             "aliases": {
                 "Gallery": "Kiyani\\Gallery\\Gallery",
                 "Alert" : "RealRashid\\SweetAlert\\Facades\\Alert" ,
-		"DataTables" : "Yajra\\DataTables\\Facades\\DataTables",
+		"DataTables" : "Yajra\\DataTables\\Facades\\DataTables"
             }
         }
     }
