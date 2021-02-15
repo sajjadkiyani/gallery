@@ -27,7 +27,7 @@ class GalleryServiceProvider extends ServiceProvider
             __DIR__.'/Public' => public_path('/'),
         ], 'public');
         $this->publishes([
-            __DIR__.'Config/app.php' => config_path('gallery.php')
+            __DIR__.'/Config/app.php' => config_path('gallery.php')
         ], 'config');
     }
 }
