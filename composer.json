@@ -10,7 +10,7 @@
     ],
     "autoload" : {
         "files": [
-            "Http/Helpers/autoloadHelpers.php"
+            "src/Http/Helpers/autoloadHelpers.php"
         ],
         "psr-4": {
             "Kiyani\\Gallery\\" : "src/"
