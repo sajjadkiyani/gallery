@@ -100,7 +100,9 @@ function specific_value_remove($array,$value) {
     return array_diff($array, (is_array($value) ? $value : array($value)));
 }
 function getDataTableColums($table){
-    $fields = ShowColumnTable::where('table',$table)->pluck('columns')->first();
+    $fields = null ;
+    if(class_exists('ShowColumnTable'))
+       $fields = ShowColumnTable::where('table',$table)->pluck('columns')->first();
     if ($fields != null){
         $fields = unserialize($fields);
     }
