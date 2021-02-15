@@ -10,7 +10,6 @@
         <h5 class="card-title">
             <span>@lang('new gallery')</span>
         </h5>
-        @dd(Gallery::published() ,'asdfsfd')
         <form method="post" action="{{ route('gallery.store') }}" enctype="multipart/form-data">
             @csrf
             <div class="row mt-3">
@@ -52,7 +51,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="custom-file-container bg-6 rounded-lg p-3 my-3" data-upload-id="gallery_images">
-                        <label class="d-flex justify-content-between">@lang('gallery images') <a href="javascript:void(0)" class="custom-file-container__image-clear" title="{{Lang::get('clear images')}}">x</a> </label>
+                        <label class="d-flex justify-content-between">@lang('gallery image') <a href="javascript:void(0)" class="custom-file-container__image-clear" title="{{Lang::get('clear images')}}">x</a> </label>
                         <label class="custom-file-container__custom-file" >
                             <input name="image" id="iamge" type="file" class="custom-file-container__custom-file__custom-file-input product-input game-input">
                             <input type="hidden" name="MAX_FILE_SIZE4" value="7485760" />
