@@ -5,4 +5,5 @@ after install successfully
 run :
   
   php artisan vendor:publish
+  
   php artisan migrate:fresh
