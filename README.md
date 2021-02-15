@@ -7,4 +7,5 @@ run :
   php artisan vendor:publish
   
   php artisan migrate:fresh
-php artisan serve
+  
+  php artisan serve
